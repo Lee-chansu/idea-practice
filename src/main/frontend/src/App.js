@@ -1,25 +1,17 @@
+import React from 'react';
+import { Route, Routes } from'react-router-dom'
 import './App.css';
-import axios from "axios";
-import {useEffect, useState} from "react";
 
+//컴포넌트
+import Main from './routes/main'
+import LoginPaging from './routes/loginPaging'
 
 function App() {
-    const [hello, setHello] = useState('')
-
-    useEffect(()=>{
-        axios.get('http://localhost:8081/api/hello')
-        .then(
-            (res)=>{
-                setHello(res.data)
-            }
-        ).catch(error => console.log(error))
-    },[])
-
   return (
-    <div className="App">
-      <h1>백엔드에서 보냅니다.</h1>
-        <p>{hello}</p>
-    </div>
+  <Routes>
+    <Route index element={<Main />} />
+    <Route path="/login" element={<LoginPaging />} />
+  </Routes>
   );
 }
 

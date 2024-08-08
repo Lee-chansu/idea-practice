@@ -1,0 +1,52 @@
+.board{
+    display: inline-block;
+    width: 50%; height: 550px;
+    margin-top: 50px;
+    margin-left : 250px;
+    background : #fff;
+    padding : 20px;
+    border: 1px solid #ddd;
+    border-radius : 5px;
+}
+
+.boardTitle{
+    display : flex; justify-content: space-between;
+    padding-bottom : 20px;
+    border-bottom: 1px solid black;
+}
+
+.boardList{
+    height : 380px;
+}
+
+.item{
+    display : flex;
+    justify-content: space-between;
+    align-items : center;
+    padding : 10px 10px;
+    border-bottom : 1px solid #ddd;
+}
+
+.link{
+    display : inline-block;
+    font-size : 24px;
+    color : black;
+    text-decoration : none;
+}
+
+.date{
+    margin-left : 10px;
+    font-size : 12px;
+    color : #aaa;
+}
+
+.writer{
+    font-size : 14px;
+    color : #333;
+}
+
+.pagingNum{
+    display : flex; justify-content : center; margin-top : 20px;
+}
+
+

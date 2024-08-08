@@ -9,7 +9,6 @@ public class indexController {
 
     @GetMapping("/api/hello")
     public String hello() {
-        String say = "say Hello";
-        return say;
+        return "";
     }
 }
