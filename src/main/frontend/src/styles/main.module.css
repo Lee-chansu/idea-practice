@@ -1,5 +1,9 @@
 
-.inner{padding : 0 120px; margin-top: 80px; background : inherit;}
+.inner{
+    width: 100%; height : 100%;
+    padding : 0 120px; margin-top: 80px;
+    background : inherit;
+}
 
 .wrap{display: flex; justify-content: flex-end; align-items: center;}
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from'react-router-dom'
 
+
+import LogoImage from '../img/Logo.png'
 import styles from '../styles/header.module.css'
 import button from '../styles/button.module.css'
 
@@ -9,7 +11,7 @@ const Header = () => {
   <header className={styles.header}>
     <div className={styles.logo}>
         <Link to='#' className={styles.link}>
-            <img className={styles.logo} src="../img/Logo.png" alt="Logo" />
+            <img className={styles.logo} src={LogoImage} alt="Logo" />
         </Link>
     </div>
     <div className={styles.nav}>
@@ -22,7 +24,7 @@ const Header = () => {
     </div>
     <div className={styles.isLogin}>
         <Link to="/login" className={button.loginButton}> Login </Link>
-        <Link to="#" className={button.loginButton}> Sign up </Link>
+        <Link to="/joinUs" className={button.loginButton}> Sign up </Link>
     </div>
   </header>
   );
